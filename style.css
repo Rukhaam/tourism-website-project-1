@@ -1,0 +1,625 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: lemon milk;
+  background-color: #16355c;
+}
+
+nav {
+  z-index: 3;
+  background-color: #16355c;
+  height: 100px;
+  width: 100%;
+}
+label.logo {
+  z-index: 3;
+  color: white;
+  font-size: 35px;
+  line-height: 90px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  z-index: 3;
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  z-index: 3;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  z-index: 3;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a.news-1,
+a:hover {
+  z-index: 3;
+  background: #ff0000;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#sidebar-active {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    margin-top: -15px;
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 856px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #ff0000;
+  }
+  #sidebar-active:checked ~ ul {
+    left: 0;
+  }
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.carousel-caption {
+  padding: 0;
+  margin: 0;
+  top: 20%;
+  text-align: center;
+
+  color: rgb(255, 0, 0);
+  transition: all 0.1s;
+}
+.carousel-control-prev {
+  z-index: 0;
+}
+.carousel-control-next {
+  z-index: 0;
+}
+.carousel-indicators {
+  z-index: 1;
+}
+#carousel-first {
+  width: 95%;
+}
+.rightSec {
+  color: white;
+  margin-top: 35px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.expTitle {
+  margin-top: 12px;
+  text-align: center;
+}
+.badge {
+  align-items: center;
+  background-color: red;
+}
+.paragraph-first {
+  text-align: center;
+  color: white;
+}
+.badge-1 {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  margin-left: 10px;
+  letter-spacing: 0.85px;
+}
+.mb-auto {
+  letter-spacing: -1px;
+  color: white;
+}
+#Gallery-1 {
+  text-align: center;
+}
+#album-1 {
+  color: white;
+}
+.leftImg {
+  margin-left: 12px;
+  margin-right: 15px;
+}
+
+.expTitle-2 {
+  text-align: center;
+}
+.expTitle-3 {
+  text-align: center;
+  color: white;
+}
+
+#album-2:hover {
+  color: rgb(255, 255, 255);
+  border-color: white;
+  transition: ease-in-out 0.5s;
+}
+#album-3:hover {
+  color: white;
+  border-color: white;
+  transition: ease-in-out 0.3s;
+}
+
+#album-4:hover {
+  color: rgb(255, 255, 255);
+  border-color: white;
+  transition: ease-in-out 0.3s;
+}
+#book-now:hover {
+  color: black;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 0 20px;
+  height: 20px;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+#wazwan:hover {
+  color: black;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 0 20px;
+  height: 20px;
+  text-decoration: none;
+  transition: ease-in-out 0.5s;
+}
+.footer-logo {
+  width: 100px;
+  padding: 0;
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
+footer {
+  width: 100%;
+  position: absolute;
+  color: white;
+  background-color: #0e1c2d;
+  border-top-left-radius: 15%;
+  padding: 100px 0 30px;
+  font-size: medium;
+  font-family: lemon milk;
+  text-transform: lowercase;
+  letter-spacing: normal;
+  line-height: 20px;
+}
+.row {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col-1 {
+  width: 50px;
+  flex-basis: 25%;
+  padding: 10px;
+  margin-right: -150px;
+  margin-left: 50px;
+}
+.col-2 {
+  margin-right: -150px;
+  width: 50px;
+  flex-basis: 25%;
+  padding: 10px;
+}
+.col-3 {
+  margin-right: -150px;
+  flex-basis: 25%;
+  padding: 10px;
+}
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+}
+#home-footer:hover {
+  text-decoration: none;
+  padding: 0;
+  width: 15%;
+  border-radius: 50px;
+
+  margin-left: 10px;
+  align-items: center;
+
+  color: rgb(243, 162, 56);
+  transition: all 0.5s;
+}
+#feature-footer:hover {
+  text-decoration: none;
+  padding: 0;
+  width: 20%;
+  border-radius: 50px;
+  margin-left: 10px;
+  align-items: center;
+
+  color: rgb(243, 162, 56);
+  transition: all 0.3s;
+}
+#faq-footer:hover {
+  text-decoration: none;
+  padding: 0;
+  width: 20%;
+  border-radius: 50px;
+  margin-left: 10px;
+  align-items: center;
+
+  color: rgb(243, 162, 56);
+  transition: all 0.3s;
+}
+#about-footer:hover {
+  text-decoration: none;
+  padding: 0;
+  width: 20%;
+  border-radius: 50px;
+  margin-left: 10px;
+  align-items: center;
+
+  color: rgb(243, 162, 56);
+  transition: all 0.3s;
+}
+#waterskking-footer:hover {
+  text-decoration: none;
+  padding: 0;
+  width: 30%;
+  border-radius: 50px;
+  margin-left: 10px;
+  align-items: center;
+
+  color: rgb(243, 162, 56);
+  transition: all 0.3s;
+}
+#riverrafting-footer:hover {
+  text-decoration: none;
+  padding: 0;
+  width: 30%;
+  border-radius: 50px;
+  margin-left: 10px;
+  align-items: center;
+
+  color: rgb(243, 162, 56);
+  transition: all 0.3s;
+}
+#boating-footer:hover {
+  text-decoration: none;
+  padding: 0;
+  width: 10%;
+  border-radius: 50px;
+  margin-left: 10px;
+  align-items: center;
+
+  color: rgb(243, 162, 56);
+  transition: all 0.3s;
+}
+#trekking-footer:hover {
+  text-decoration: none;
+  padding: 0;
+  width: 20%;
+  border-radius: 50px;
+  margin-left: 10px;
+  align-items: center;
+
+  color: rgb(243, 162, 56);
+  transition: all 0.3s;
+}
+#gallery-footer:hover {
+  text-decoration: none;
+  padding: 0;
+  width: 17%;
+  border-radius: 50px;
+  margin-left: 10px;
+  align-items: center;
+
+  color: rgb(243, 162, 56);
+  transition: all 0.3s;
+}
+#monuments-footer:hover {
+  text-decoration: none;
+  padding: 0;
+  width: 26%;
+  border-radius: 50px;
+  margin-left: 10px;
+  align-items: center;
+
+  color: rgb(243, 162, 56);
+  transition: all 0.3s;
+}
+#lakes-footer:hover {
+  padding: 0;
+  width: 13%;
+  border-radius: 50px;
+  margin-left: 10px;
+  align-items: center;
+  color: rgb(243, 162, 56);
+  transition: all 0.3s;
+}
+#gardens-footer:hover {
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 0px;
+  width: 20%;
+
+  color: rgb(243, 162, 56);
+  transition: all 0.3s;
+}
+#religions-footer:hover {
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 0px;
+  width: 20%;
+
+  color: rgb(243, 162, 56);
+  transition: all 0.3s;
+}
+#traditions-footer:hover {
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 0px;
+  width: 20%;
+
+  color: rgb(243, 162, 56);
+  transition: all 0.3s;
+}
+@media (max-width: 952px) {
+  footer {
+    width: 100%;
+    position: absolute;
+    color: white;
+    background-color: #0e1c2d;
+    border-top-left-radius: 0%;
+    padding: 100px 0 30px;
+    font-size: medium;
+    font-family: lemon milk;
+    text-transform: lowercase;
+    letter-spacing: normal;
+    line-height: 20px;
+  }
+  .col-1 {
+    width: 50px;
+    flex-basis: 100%;
+    padding: 10px;
+    margin-right: -150px;
+    margin-left: 50px;
+  }
+  .col-2 {
+    margin-right: -150px;
+    width: 50px;
+    flex-basis: 100%;
+    padding: 10px;
+  }
+  .col-3 {
+    margin-right: -150px;
+    flex-basis: 100%;
+    padding: 10px;
+  }
+  .col-4 {
+    flex-basis: 100%;
+    padding: 10px;
+  }
+  #home-footer:hover {
+    text-decoration: none;
+    padding: 0;
+    width: 15%;
+    border-radius: 50px;
+    margin-left: 10px;
+    align-items: center;
+    color: rgb(243, 162, 56);
+    transition: all 0.5s;
+  }
+  #feature-footer:hover {
+    text-decoration: none;
+    padding: 0;
+    width: 20%;
+    border-radius: 50px;
+    margin-left: 10px;
+    align-items: center;
+
+    color: rgb(243, 162, 56);
+    transition: all 0.3s;
+  }
+  #faq-footer:hover {
+    text-decoration: none;
+    padding: 0;
+    width: 20%;
+    border-radius: 50px;
+    margin-left: 10px;
+    align-items: center;
+
+    color: rgb(243, 162, 56);
+    transition: all 0.3s;
+  }
+  #about-footer:hover {
+    text-decoration: none;
+    padding: 0;
+    width: 20%;
+    border-radius: 50px;
+    margin-left: 10px;
+    align-items: center;
+
+    color: rgb(243, 162, 56);
+    transition: all 0.3s;
+  }
+  #waterskking-footer:hover {
+    text-decoration: none;
+    padding: 0;
+    width: 30%;
+    border-radius: 50px;
+    margin-left: 10px;
+    align-items: center;
+
+    color: rgb(243, 162, 56);
+    transition: all 0.3s;
+  }
+  #riverrafting-footer:hover {
+    text-decoration: none;
+    padding: 0;
+    width: 30%;
+    border-radius: 50px;
+    margin-left: 10px;
+    align-items: center;
+
+    color: rgb(243, 162, 56);
+    transition: all 0.3s;
+  }
+  #boating-footer:hover {
+    text-decoration: none;
+    padding: 0;
+    width: 10%;
+    border-radius: 50px;
+    margin-left: 10px;
+    align-items: center;
+
+    color: rgb(243, 162, 56);
+    transition: all 0.3s;
+  }
+  #trekking-footer:hover {
+    text-decoration: none;
+    padding: 0;
+    width: 20%;
+    border-radius: 50px;
+    margin-left: 10px;
+    align-items: center;
+
+    color: rgb(243, 162, 56);
+    transition: all 0.3s;
+  }
+  #gallery-footer:hover {
+    text-decoration: none;
+    padding: 0;
+    width: 17%;
+    border-radius: 50px;
+    margin-left: 10px;
+    align-items: center;
+
+    color: rgb(243, 162, 56);
+    transition: all 0.3s;
+  }
+  #monuments-footer:hover {
+    text-decoration: none;
+    padding: 0;
+    width: 26%;
+    border-radius: 50px;
+    margin-left: 10px;
+    align-items: center;
+
+    color: rgb(243, 162, 56);
+    transition: all 0.3s;
+  }
+  #lakes-footer:hover {
+    padding: 0;
+    width: 13%;
+    border-radius: 50px;
+    margin-left: 10px;
+    align-items: center;
+    color: rgb(243, 162, 56);
+    transition: all 0.3s;
+  }
+  #gardens-footer:hover {
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 0px;
+    width: 20%;
+
+    color: rgb(243, 162, 56);
+    transition: all 0.3s;
+  }
+  #religions-footer:hover {
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 0px;
+    width: 20%;
+
+    color: rgb(243, 162, 56);
+    transition: all 0.3s;
+  }
+  #traditions-footer:hover {
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 0px;
+    width: 20%;
+
+    color: rgb(243, 162, 56);
+    transition: all 0.3s;
+  }
+}
+#album-7 {
+  background-color: #16355c;
+  color: white;
+  border-color: #16355c;
+}
+#album-7:hover {
+  color: red;
+  background-color: none;
+  border-color: white;
+}
+
+#my-form {
+  color: rgb(255, 255, 255);
+}
+.email-1 {
+  color: black;
+  font-size: small;
+}
+.password-1 {
+  color: black;
+  font-size: small;
+}
+li:hover,
+li.news-1 {
+  background-color: none;
+  color: #ff0000;
+}
